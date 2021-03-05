@@ -1,0 +1,49 @@
+// html,
+// body,
+// #root {
+// 	margin: 0;
+// 	height: 100%;
+// }
+
+@keyframes pulse {
+	from {
+		background: -webkit-radial-gradient(center, circle cover, #39E000 0%, #252525 25%);
+		opacity: .8;
+	}
+	to {
+		background: -webkit-radial-gradient(center, circle cover, #39E000 0%, #252525 25%);
+		opacity: 0;
+	}
+}
+
+// @-moz-keyframes pulse {
+//     from   {
+//             background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
+//             opacity:1;
+//         }
+//     to {
+//             background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+//             opacity:0.5;
+//         }
+// }
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #252525;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+.star {
+	// margin: 20px;
+	// padding:100px;
+	width: 100%;
+	height: 100%;
+	animation: pulse 1s ease-in-out infinite alternate;
+	// -moz-animation: pulse .5s ease-in-out infinite alternate;
+}
