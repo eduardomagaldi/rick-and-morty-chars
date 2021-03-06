@@ -1,15 +1,132 @@
 .app {
-	position: absolute;
-	top: 0;
-	left: 0;
+	width: 100%;
 	height: 100%;
+	// opacity: .4;
+	// filter: blur(4px);
+
 	background-image: url("./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png");
-	// background-image: url("./401100.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 400px;
+}
+
+.wrapper__content {
 	width: 100%;
-	// display: none;
+	// height: 100%;
+	// background-color: rgba(#39E000, 0.7);
+	min-height: 100%;
+	position: absolute;
+	top: 970%;
+	padding: 10px 10px 10px;
+	box-sizing: border-box;
+}
+
+.content {
+	background-color: rgba(0, 0, 0, .4);
+	background-color: rgba(255, 255, 255, .7);
+	backdrop-filter: blur(20px);
+	box-sizing: border-box;
+	// box-shadow: 0 0 30px black;
+	width: 100%;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.content__icon_mouse {
+	border: 2px solid #39E000;
+	border-radius: 16px;
+	height: 40px;
+	width: 24px;
+	display: block;
+	z-index: 10;
+	opacity: 0.3;
+
+	&:after {
+		-webkit-animation-name: drop;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-play-state: running;
+		-webkit-animation-name: drop;
+				animation-name: drop;
+		-webkit-animation-duration: 2s;
+				animation-duration: 2s;
+		-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+				animation-delay: 0s;
+		-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+		-webkit-animation-play-state: running;
+				animation-play-state: running;
+		content: "";
+		position: relative;
+		border-radius: 10px;
+		background: #39E000;
+		width: 2px;
+		height: 6px;
+		top: 4px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+@-webkit-keyframes drop {
+	0% {
+	  top: 5px;
+	  opacity: 0;
+	}
+	30% {
+	  top: 10px;
+	  opacity: 1;
+	}
+	100% {
+	  top: 25px;
+	  opacity: 0;
+	}
+}
+
+@keyframes drop {
+	0% {
+	  top: 5px;
+	  opacity: 0;
+	}
+	30% {
+	  top: 10px;
+	  opacity: 1;
+	}
+	100% {
+	  top: 25px;
+	  opacity: 0;
+	}
+}
+
+.content__wrapper__icon_mouse {
+	position: fixed;
+	background-color: white;
+	padding: 10px;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+	background-color: #273645;
+	background-color: transparent;
+	z-index: 0;
 }
 
 

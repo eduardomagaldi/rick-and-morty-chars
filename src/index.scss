@@ -8,10 +8,12 @@
 @keyframes pulse {
 	from {
 		background: -webkit-radial-gradient(center, circle cover, #39E000 0%, #252525 25%);
-		opacity: .8;
+		// background-position: 0%;
+		opacity: 1;
 	}
 	to {
 		background: -webkit-radial-gradient(center, circle cover, #39E000 0%, #252525 25%);
+		// background-position: 100%;
 		opacity: 0;
 	}
 }
@@ -27,11 +29,81 @@
 //         }
 // }
 
-body{
+body {
+	// margin: 0;
+	// padding: 0;
+	// background-color: #252525;
+
+	// height: 100%;
+	// background-image: url("./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png");
+	// background-image: url("./401100.jpg");
+	// background-repeat: no-repeat;
+	// background-position: top center;
+	// // background-size: 350px 342px;
+	// // background-size: 30%;
+	// width: 100%;
+	// // display: none;
+	// // animation: gradient 1000ms;
+	// // animation: gradient 1s ease-in-out infinite alternate;
+	// // animation: rot 6s cubic-bezier(.68, -.57, .26, 1.65) infinite;
+
+	margin: 0;
+    padding: 0;
+    background-color: #252525;
+    height: 100%;
+    background-image: url("./401100.jpg");
+	// background-image: url("./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png");
+
+    background-repeat: no-repeat;
+    background-position: right -245px;
+    width: 100%;
+    // background-size: 320px;
+}
+
+body {
 	margin: 0;
 	padding: 0;
 	background-color: #252525;
+	// position: fixed;
+	height: 100%;
+	background-image: url("./stock-vector-rick-and-morty-cartoon-portal-gun-background-abstract-green-and-yellow-colors-vortex-vector-1552796555.jpg");
+	background-image: url("./624053b5cf52686164499bfd2f7e4a85.png");
+	background-repeat: repeat;
+	background-position: top center;
+	background-color: #39E000;
+	background-color: #1d3e13;
+	background-color: #273645;
+	// background-size: 350px 342px;
+	// background-size: 30%;
+	width: 100%;
+	background-attachment: fixed;
+	// background-color: #252525;
+	// display: none;
+	// animation: gradient 1000ms;
+	// animation: gradient 1s ease-in-out infinite alternate;
+	// animation: rot 6s cubic-bezier(.68, -.57, .26, 1.65) infinite;
+	background-blend-mode: multiply;
+
+	&:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		opacity: 0.6;
+		// background-image: url("https://assets.digitalocean.com/labs/images/community_bg.png");
+		background-color: black;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-size: cover;
+		z-index: -1;
+	}
 }
+
+
 
 html,
 body,
@@ -44,6 +116,10 @@ body,
 	// padding:100px;
 	width: 100%;
 	height: 100%;
-	animation: pulse 1s ease-in-out infinite alternate;
+	// animation: pulse 1s ease-in-out infinite alternate;
+
 	// -moz-animation: pulse .5s ease-in-out infinite alternate;
 }
+
+
+
