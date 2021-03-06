@@ -11,11 +11,61 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	&:after {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-color: rgba(0, 0, 0, .3);
+		z-index: 1000;
+	}
 }
 
 .img_main {
 	position: fixed;
-	margin-left: -10px;
+	margin-left: -25px;
+}
+
+.negative {
+	position: fixed;
+	// display: none;
+	// border: 1000px solid #14B0C8;
+	border: 1000px solid #fff;
+	width: 580px;
+	background-color: rgba(#14B0C8, .9);
+	// opacity: .8;
+	margin: 0;
+	margin-top: -32px;
+	z-index: 2000;
+}
+
+.negative__word {
+	background-image: url("./../../rick-and-morty-negative.svg");
+	position: fixed;
+    background-size: 580px;
+	background-color: rgba(#14B0C8, .9);
+	// display: none;
+	border: 4000px solid white;
+}
+
+.negative__word--rick {
+    width: 207px;
+    height: 170px;
+    margin-left: -372px;
+    margin-top: -77px;
+}
+
+.negative__word--and {
+	width: 82px;
+    height: 80px;
+    background-position: -209px;
+}
+
+.negative__word--morty {
+    width: 272px;
+    height: 180px;
+    background-position: -299px;
 }
 
 .wrapper__content {
@@ -33,8 +83,10 @@
 	background-color: rgba(0, 0, 0, .4);
 	background-color: rgba(255, 255, 255, .7);
 	backdrop-filter: blur(20px);
+	-moz-backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 	box-sizing: border-box;
-	// box-shadow: 0 0 30px black;
 	width: 100%;
 	border-radius: 20px;
 	padding: 30px;
