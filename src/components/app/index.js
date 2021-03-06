@@ -1,14 +1,17 @@
 import './style.scss';
 // import Loader from '../loader';
 
+import logo from "./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png";
+
 
 function App(props) {
 	return <>
 		<div className="app">
+			<img src={logo} className="img_main" alt="Rick and Morty with Portal" />
+
 			<div className="content__wrapper__icon_mouse">
 				<div className="content__icon_mouse"></div>
 			</div>
-
 
 			<div className="wrapper__content">
 				<div className="content">
