@@ -1,33 +1,3 @@
-// html,
-// body,
-// #root {
-// 	margin: 0;
-// 	height: 100%;
-// }
-
-@keyframes pulse {
-	from {
-		background: -webkit-radial-gradient(center, circle cover, #39E000 0%, #252525 25%);
-		// background-position: 0%;
-		opacity: 1;
-	}
-	to {
-		background: -webkit-radial-gradient(center, circle cover, #39E000 0%, #252525 25%);
-		// background-position: 100%;
-		opacity: 0;
-	}
-}
-
-// @-moz-keyframes pulse {
-//     from   {
-//             background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
-//             opacity:1;
-//         }
-//     to {
-//             background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
-//             opacity:0.5;
-//         }
-// }
 
 .guide {
 	position: fixed;
@@ -39,36 +9,11 @@
 	left: 50%;
 }
 
-// body {
-// 	// margin: 0;
-// 	// padding: 0;
-// 	// background-color: #252525;
-
-// 	// height: 100%;
-// 	// background-image: url("./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png");
-// 	// background-image: url("./401100.jpg");
-// 	// background-repeat: no-repeat;
-// 	// background-position: top center;
-// 	// // background-size: 350px 342px;
-// 	// // background-size: 30%;
-// 	// width: 100%;
-// 	// // display: none;
-// 	// // animation: gradient 1000ms;
-// 	// // animation: gradient 1s ease-in-out infinite alternate;
-// 	// // animation: rot 6s cubic-bezier(.68, -.57, .26, 1.65) infinite;
-
-// 	margin: 0;
-//     padding: 0;
-//     background-color: #252525;
-//     height: 100%;
-//     background-image: url("./401100.jpg");
-// 	// background-image: url("./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png");
-
-//     background-repeat: no-repeat;
-//     background-position: right -245px;
-//     width: 100%;
-//     // background-size: 320px;
-// }
+html,
+body,
+#root {
+	height: 100%;
+}
 
 body {
 	color: white;
@@ -78,33 +23,38 @@ body {
 	background-image: url("./pattern.jpg");
 	background-repeat: repeat;
 	background-position: center center;
-	// background-color: #39E000;
-	// background-color: #1d3e13;
-	// background-color: #273645;
 	background-color: #010103;
 	background-size: 400px 400px;
-	// width: 100%;
-	font-family: 'Amatic SC', cursive;
-	font-size: 40px;
-	text-transform: uppercase;
-	color: #16AFC8;
+	font-size: 18pt;
+	color: rgb(142, 142, 142);
+	font-family: 'Arial', sans-serif;
+	letter-spacing: 1px;
+	font-weight: lighter;
 }
 
-html,
-body,
-#root {
-	height: 100%;
+a {
+	color: yellow;
+	text-decoration: none;
+	// color: #88C346;
 }
 
-.star {
-	// margin: 20px;
-	// padding:100px;
-	width: 100%;
-	height: 100%;
-	// animation: pulse 1s ease-in-out infinite alternate;
+h1,
+h2,
+h3,
+small {
+	margin-bottom: 0;
+	font-family: 'Neucha', sans-serif;
+	color: #88C346;
 
-	// -moz-animation: pulse .5s ease-in-out infinite alternate;
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
+p {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
 
 

@@ -50,13 +50,19 @@ function App(props) {
 
 	return <>
 		<div className="app">
-			<div style={{ position: 'fixed', top: 0 }}>{JSON.stringify(activeObj)}</div>
+			{/* <div style={{ position: 'fixed', top: 0 }}>{JSON.stringify(activeObj)}</div> */}
 
 			<section className="section__title">
 				<div className="section__title__wrapper_img_title">
 					<img
 						src={title}
-						className="img_title"
+						className="img_title img_title__shadow"
+						alt="Rick and Morty"
+						width="600"
+					/>
+					<img
+						src={title}
+						className="img_title img_title__shadow"
 						alt="Rick and Morty"
 						width="600"
 					/>
@@ -70,6 +76,7 @@ function App(props) {
 
 				<div>
 					<h1>Character Catalog</h1>
+					<small>By <a href="https://www.eduardomagaldi.com.br/eng">Eduardo Magaldi</a></small>
 				</div>
 			</section>
 
@@ -90,7 +97,60 @@ function App(props) {
 
 			<div className="wrapper__content">
 				<div className="content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<div className="alert">
+						<h2>No actual content here?</h2>
+						<h3>Maybe you can check <a rel="nofollow" target="_blank" href="https://60453ff2ac1bd37523b45c0f--focused-brattain-bc8c35.netlify.app/1">Game of Thrones Characters</a> done by me some months ago, in Vue.js.</h3>
+					</div>
+
+					<div className="card_char">
+						<div className="card_char__image"></div>
+
+						<div className="card_char__wrapper_info">
+							<h2>Character Name</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+
+					<div className="card_char">
+						<div className="card_char__image"></div>
+
+						<div className="card_char__wrapper_info">
+							<h2>Character Name</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+
+					<div className="card_char">
+						<div className="card_char__image"></div>
+
+						<div className="card_char__wrapper_info">
+							<h2>Character Name</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+
+					<div className="card_char">
+						<div className="card_char__image"></div>
+
+						<div className="card_char__wrapper_info">
+							<h2>Character Name</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+
+					<div className="card_char">
+						<div className="card_char__image"></div>
+
+						<div className="card_char__wrapper_info">
+							<h2>Character Name</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
