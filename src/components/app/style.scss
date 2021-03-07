@@ -13,7 +13,7 @@
 	justify-content: center;
 
 	&:after {
-		content: "";
+		// content: "";
 		height: 100%;
 		width: 100%;
 		position: absolute;
@@ -24,20 +24,21 @@
 
 .img_main {
 	position: fixed;
-	margin-left: -25px;
+	margin-left: -20px;
 }
 
 .negative {
 	position: fixed;
 	// display: none;
 	// border: 1000px solid #14B0C8;
-	border: 1000px solid #fff;
+	// border: 1000px solid #fff;
 	width: 580px;
 	background-color: rgba(#14B0C8, .9);
 	// opacity: .8;
 	margin: 0;
 	margin-top: -32px;
 	z-index: 2000;
+
 }
 
 .negative__word {
@@ -45,8 +46,27 @@
 	position: fixed;
     background-size: 580px;
 	background-color: rgba(#14B0C8, .9);
-	// display: none;
-	border: 4000px solid white;
+	opacity: .9;
+	animation: scale 3s ease-in-out;
+	border-radius: 50%;
+	border: 1000px solid white;
+	backdrop-filter: blur(4px);
+	transform: scale(0);
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0);
+	}
+	10% {
+		transform: scale(1);
+	}
+	90% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
 }
 
 .negative__word--rick {
@@ -92,15 +112,6 @@
 	padding: 30px;
 	height: 100%;
 	min-height: calc(100vh - 60px);
-}
-
-@keyframes rot {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
 }
 
 .content__icon_mouse {

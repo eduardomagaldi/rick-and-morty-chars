@@ -1,9 +1,7 @@
 import './style.scss';
-// import Loader from '../loader';
 
 import logo from "./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png";
 import neg from "./../../rick-and-morty-negative.svg";
-
 
 function App(props) {
 	return <>
@@ -13,7 +11,7 @@ function App(props) {
 
 			{/* <div className="negative__word negative__word--rick"></div> */}
 			{/* <div className="negative__word negative__word--and"></div> */}
-			{/* <div className="negative__word negative__word--morty"></div> */}
+			<div className="negative__word negative__word--morty"></div>
 
 			<div className="content__wrapper__icon_mouse">
 				<div className="content__icon_mouse"></div>
