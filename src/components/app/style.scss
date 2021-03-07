@@ -27,7 +27,46 @@
 	margin-left: -20px;
 }
 
-.negative {
+.negative__word {
+	background-image: url("./../../rick-and-morty-negative.svg");
+	position: fixed;
+    background-size: 580px;
+	background-color: rgba(#14B0C8, .9);
+	opacity: .9;
+	border-radius: 100% 200px 100% 200px;
+	border: 20px solid white;
+	backdrop-filter: blur(4px);
+	transform: scale(0);
+	transition: transform .7s;
+	background-repeat: no-repeat;
+
+	&.active {
+		// animation: scale 3s ease-in-out;
+		transform: scale(1);
+	}
+}
+
+// @keyframes scale {
+// 	0% {
+// 		transform: scale(0);
+// 	}
+// 	100% {
+// 		transform: scale(1);
+// 	}
+// }
+
+.negative__word--rick {
+    width: 207px;
+    height: 170px;
+    margin-left: -372px;
+    margin-top: -77px;
+}
+
+.negative__word--complete {
+	width: 600px;
+    height: 170px;
+    // background-position: -209px;
+
 	position: fixed;
 	// display: none;
 	// border: 1000px solid #14B0C8;
@@ -38,53 +77,12 @@
 	margin: 0;
 	margin-top: -32px;
 	z-index: 2000;
-
+	border-radius: 400px;
 }
 
-.negative__word {
-	background-image: url("./../../rick-and-morty-negative.svg");
-	position: fixed;
-    background-size: 580px;
-	background-color: rgba(#14B0C8, .9);
-	opacity: .9;
-	animation: scale 3s ease-in-out;
-	border-radius: 50%;
-	border: 1000px solid white;
-	backdrop-filter: blur(4px);
-	transform: scale(0);
-	display: none;
+.negative {
 
-	&.active {
-		display: block;
-	}
-}
 
-@keyframes scale {
-	0% {
-		transform: scale(0);
-	}
-	10% {
-		transform: scale(1);
-	}
-	90% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(0);
-	}
-}
-
-.negative__word--rick {
-    width: 207px;
-    height: 170px;
-    margin-left: -372px;
-    margin-top: -77px;
-}
-
-.negative__word--and {
-	width: 82px;
-    height: 80px;
-    background-position: -209px;
 }
 
 .negative__word--morty {
@@ -207,6 +205,36 @@
 	background-color: #273645;
 	background-color: transparent;
 	z-index: 0;
+	flex-direction: column;
+}
+
+.icon_mouse__arrow {
+	// background: grey;
+	width: 11px;
+	height: 4px;
+	margin-top: 10px;
+	position: relative;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: 7px;
+		height: 2px;
+		background: #39E000;
+		margin-top: 2px;
+		border-radius: 1px;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+		left: auto;
+		right: 0;
+	}
 }
 
 

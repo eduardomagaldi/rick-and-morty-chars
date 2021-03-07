@@ -10,25 +10,24 @@ function App(props) {
 
 	useEffect(() => {
 		console.log('use effect 1');
-		window.addEventListener('scroll', debounce(handleScroll, 500));
-		window.addEventListener('scroll', throttle(handleScroll, 500));
-		// window.addEventListener('scroll', handleScroll);
+		window.addEventListener(
+			'scroll',
+			throttle(debounce(handleScroll, 300), 300),
+		);
 	}, []);
 
 	useEffect(() => {
 		console.log('use effect 2');
-		// window.addEventListener('scroll', handleScroll);
 	}, [activeObj]);
 
 	function handleScroll($event) {
 		const scrollMap = {
 			'100-299': 'negative__word--rick',
-			'300-599': 'negative__word--and',
-			'600-899': 'negative__word--morty',
+			'300-599': 'negative__word--morty',
+			'600-899': 'negative__word--complete',
 		};
-		const scrollY = window.scrollY;
 
-		console.log('scrollY', scrollY);
+		const scrollY = window.scrollY;
 
 		for (const range in scrollMap) {
 			const splitRange = range.split('-');
@@ -43,23 +42,27 @@ function App(props) {
 
 				setActiveObj(newActiveObj);
 				break;
+			} else {
+				setActiveObj({});
 			}
 		}
-
 	}
 
 	return <>
 		<div className="app">
+			<div style={{ position: 'fixed', top: 0 }}>{JSON.stringify(activeObj)}</div>
 
 			<img src={logo} className="img_main" alt="Rick and Morty with Portal" />
 			{/* <img src={neg} className="img_main negative" alt="Rick and Morty with Portal" /> */}
 
+			<div className={'negative__word negative__word--complete ' + activeObj['negative__word--complete']}></div>
 			<div className={'negative__word negative__word--rick ' + activeObj['negative__word--rick']}></div>
 			<div className={'negative__word negative__word--and ' + activeObj['negative__word--and']}></div>
 			<div className={'negative__word negative__word--morty ' + activeObj['negative__word--morty']}></div>
 
 			<div className="content__wrapper__icon_mouse">
 				<div className="content__icon_mouse"></div>
+				<div className="icon_mouse__arrow"></div>
 			</div>
 
 			<div className="wrapper__content">
