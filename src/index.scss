@@ -29,6 +29,16 @@
 //         }
 // }
 
+.guide {
+	position: fixed;
+	width: 1px;
+	height: 100%;
+	margin: 0 auto;
+	top: 0;
+	background: lightblue;
+	left: 50%;
+}
+
 // body {
 // 	// margin: 0;
 // 	// padding: 0;
@@ -64,53 +74,21 @@ body {
 	color: white;
 	margin: 0;
 	padding: 0;
-
-	// position: fixed;
 	height: 100%;
-	// background-image: url("./stock-vector-rick-and-morty-cartoon-portal-gun-background-abstract-green-and-yellow-colors-vortex-vector-1552796555.jpg");
 	background-image: url("./pattern.jpg");
 	background-repeat: repeat;
-	background-position: top center;
+	background-position: center center;
 	// background-color: #39E000;
 	// background-color: #1d3e13;
 	// background-color: #273645;
-	background-color: #112a42;
-	// background-color: #39E000;
-	// background-color: #124700;
-	// background-color: rgb(0, 0, 209);
+	background-color: #010103;
 	background-size: 400px 400px;
-	// background-color: #39E000;
-	// background-size: 30%;
-	width: 100%;
-	// background-attachment: fixed;
-	// background-color: #252525;
-	// display: none;
-	// animation: gradient 1000ms;
-	// animation: gradient 1s ease-in-out infinite alternate;
-	// animation: rot 6s cubic-bezier(.68, -.57, .26, 1.65) infinite;
-	background-blend-mode: multiply;
-	// background-blend-mode: screen;
-
-	// &:before {
-	// 	content: " ";
-	// 	display: block;
-	// 	position: absolute;
-	// 	left: 0;
-	// 	top: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	z-index: 1;
-	// 	opacity: 0;
-	// 	// background-image: url("https://assets.digitalocean.com/labs/images/community_bg.png");
-	// 	background-color: black;
-	// 	background-repeat: no-repeat;
-	// 	background-position: 50% 0;
-	// 	background-size: cover;
-	// 	z-index: -1;
-	// }
+	// width: 100%;
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #16AFC8;
 }
-
-
 
 html,
 body,

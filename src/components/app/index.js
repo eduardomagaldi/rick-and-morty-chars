@@ -1,7 +1,7 @@
 import './style.scss';
 
 import logo from "./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png";
-import neg from "./../../rick-and-morty-negative.svg";
+import title from "./../../rick-and-morty.svg";
 
 import React, { useState, useEffect } from 'react';
 
@@ -52,13 +52,36 @@ function App(props) {
 		<div className="app">
 			<div style={{ position: 'fixed', top: 0 }}>{JSON.stringify(activeObj)}</div>
 
-			<img src={logo} className="img_main" alt="Rick and Morty with Portal" />
-			{/* <img src={neg} className="img_main negative" alt="Rick and Morty with Portal" /> */}
+			<section className="section__title">
+				<div className="section__title__wrapper_img_title">
+					<img
+						src={title}
+						className="img_title"
+						alt="Rick and Morty"
+						width="600"
+					/>
+					<img
+						src={title}
+						className="img_title"
+						alt="Rick and Morty"
+						width="600"
+					/>
+				</div>
 
-			<div className={'negative__word negative__word--complete ' + activeObj['negative__word--complete']}></div>
-			<div className={'negative__word negative__word--rick ' + activeObj['negative__word--rick']}></div>
+				<div>
+					<h1>Character Catalog</h1>
+				</div>
+			</section>
+
+			<div className="wrapper_img">
+
+				<img src={logo} className="img_main" alt="Rick and Morty with Portal" />
+			</div>
+
+			<div className={'negative__word negative__word--complete active ' + activeObj['negative__word--complete']}></div>
+			{/* <div className={'negative__word negative__word--rick ' + activeObj['negative__word--rick']}></div>
 			<div className={'negative__word negative__word--and ' + activeObj['negative__word--and']}></div>
-			<div className={'negative__word negative__word--morty ' + activeObj['negative__word--morty']}></div>
+			<div className={'negative__word negative__word--morty ' + activeObj['negative__word--morty']}></div> */}
 
 			<div className="content__wrapper__icon_mouse">
 				<div className="content__icon_mouse"></div>

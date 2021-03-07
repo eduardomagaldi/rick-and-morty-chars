@@ -1,95 +1,102 @@
 .app {
-	width: 100%;
-	height: 100%;
-	// opacity: .4;
-	// filter: blur(4px);
-
-	// background-image: url("./kisspng-portal-morty-smith-rick-sanchez-t-shirt-hoodie-portal-5ac4b0cbe2bbd5.4984654015228397559287.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	// background-attachment: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	&:after {
-		// content: "";
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		background-color: rgba(0, 0, 0, .3);
-		z-index: 1000;
-	}
+	// width: 100%;
+	// height: 100%;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	text-align: center;
 }
 
 .img_main {
-	position: fixed;
+
 	margin-left: -20px;
-}
+	margin-top: -230px;
 
-.negative__word {
-	background-image: url("./../../rick-and-morty-negative.svg");
-	position: fixed;
-    background-size: 580px;
-	background-color: rgba(#14B0C8, .9);
-	opacity: .9;
-	border-radius: 100% 200px 100% 200px;
-	border: 20px solid white;
-	backdrop-filter: blur(4px);
-	transform: scale(0);
-	transition: transform .7s;
-	background-repeat: no-repeat;
+// 	// position: absolute;
 
-	&.active {
-		// animation: scale 3s ease-in-out;
-		transform: scale(1);
-	}
-}
-
-// @keyframes scale {
-// 	0% {
-// 		transform: scale(0);
+// 	&.active {
+// 		position: fixed;
 // 	}
-// 	100% {
+}
+
+.img_title {
+	-webkit-filter: drop-shadow(0 0 40px rgba(#8BC647, 1));
+	filter: drop-shadow(0 0 40px rgba(#8BC647, 1));
+	max-width: 100%;
+	position: absolute;
+	margin-left: 45px;
+	left: 0;
+}
+
+// .wrapper_img {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	max-width: 800px;
+// 	justify-content: center;
+// 	// margin: 300px auto 0;
+// }
+
+.section__title {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.section__title__wrapper_img_title {
+	position: relative;
+	width: 600px;
+	height: 176px;
+}
+
+// .negative__word {
+// 	background-image: url("./../../rick-and-morty-negative.svg");
+// 	position: fixed;
+//     background-size: 580px;
+// 	opacity: .9;
+// 	// border-radius: 100% 200px 100% 200px;
+// 	// border: 20px solid white;
+// 	backdrop-filter: blur(4px);
+// 	transform: scale(0);
+// 	transition: transform .7s;
+// 	background-repeat: no-repeat;
+
+// 	&.active {
 // 		transform: scale(1);
 // 	}
 // }
 
-.negative__word--rick {
-    width: 207px;
-    height: 170px;
-    margin-left: -372px;
-    margin-top: -77px;
-}
+// .negative__word--rick {
+//     width: 207px;
+//     height: 170px;
+//     margin-left: -372px;
+//     // margin-top: -77px;
+// 	z-index: 3000;
+// }
 
-.negative__word--complete {
-	width: 600px;
-    height: 170px;
-    // background-position: -209px;
+// .negative__word--morty {
+//     width: 272px;
+//     height: 170px;
+//     background-position: -299px;
+// 	z-index: 3000;
+// 	margin-left: 308px;
+// }
 
-	position: fixed;
-	// display: none;
-	// border: 1000px solid #14B0C8;
-	// border: 1000px solid #fff;
-	width: 580px;
-	background-color: rgba(#14B0C8, .9);
-	// opacity: .8;
-	margin: 0;
-	margin-top: -32px;
-	z-index: 2000;
-	border-radius: 400px;
-}
-
-.negative {
-
-
-}
-
-.negative__word--morty {
-    width: 272px;
-    height: 180px;
-    background-position: -299px;
-}
+// .negative__word--complete {
+// 	width: 600px;
+//     height: 170px;
+// 	position: fixed;
+// 	width: 580px;
+// 	background-color: rgba(#14B0C8, .9);
+// 	margin: 0;
+// 	// margin-top: -32px;
+// 	z-index: 2000;
+// 	// border-radius: 400px;
+// 	opacity: .8;
+// }
 
 .wrapper__content {
 	width: 100%;
@@ -119,6 +126,7 @@
 
 .content__icon_mouse {
 	border: 1px solid #39E000;
+	border: 1px solid black;
 	border-radius: 16px;
 	height: 40px;
 	width: 24px;
@@ -126,6 +134,8 @@
 	z-index: 10;
 	// opacity: 0.3;
 	background: #010303;
+	background: white;
+	background: transparent;
 
 	&:after {
 		-webkit-animation-name: drop;
@@ -150,6 +160,7 @@
 		position: relative;
 		border-radius: 10px;
 		background: #39E000;
+		background: black;
 		width: 2px;
 		height: 6px;
 		top: 4px;
@@ -200,7 +211,7 @@
 	align-items: center;
 	justify-content: center;
 	left: 50%;
-	bottom: 30px;
+	bottom: 0px;
 	transform: translateX(-50%);
 	background-color: #273645;
 	background-color: transparent;
@@ -209,7 +220,6 @@
 }
 
 .icon_mouse__arrow {
-	// background: grey;
 	width: 11px;
 	height: 4px;
 	margin-top: 10px;
@@ -222,6 +232,7 @@
 		width: 7px;
 		height: 2px;
 		background: #39E000;
+		background: black;
 		margin-top: 2px;
 		border-radius: 1px;
 		transform: rotate(45deg);
@@ -236,44 +247,3 @@
 		right: 0;
 	}
 }
-
-
-
-// @-webkit-keyframes pulse {
-//     from   {
-//             background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%);
-//             opacity:1;
-//         }
-//     to {
-//             background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%);
-//             opacity:0.5;
-//         }
-// }
-
-// @-moz-keyframes pulse {
-//     from   {
-//             background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
-//             opacity:1;
-//         }
-//     to {
-//             background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
-//             opacity:0.5;
-//         }
-// }
-
-// body{
-//     margin: 0;
-//     padding: 0;
-//     background: #252525;
-// }
-
-// .star {
-//     margin: 20px;
-//     padding:100px;
-//     width: 200px;
-//     height:200px;
-//      -webkit-animation: pulse 2s ease-in-out infinite alternate;
-//      -moz-animation:    pulse 2s ease-in-out infinite alternate;
-// 	 width: 100%;
-// 	 height: 100%;
-// }
