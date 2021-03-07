@@ -68,7 +68,7 @@ function Alert() {
 	return <>
 		<div className="alert">
 			<h2>No actual content here?</h2>
-			<h3>Maybe you can check <a rel="noreferrer" target="_blank" href="https://60453ff2ac1bd37523b45c0f--focused-brattain-bc8c35.netlify.app/1">Game of Thrones Characters</a> done by me some months ago, in Vue.js. :-) And here is the <a href="https://github.com/eduardomagaldi/got-guys" rel="noreferrer">repo</a>.</h3>
+			<h3>Maybe you can check <a rel="noreferrer" target="_blank" href="https://60453ff2ac1bd37523b45c0f--focused-brattain-bc8c35.netlify.app/1">Game of Thrones Characters</a> done by me some months ago, in Vue.js. :-) And here is the <a href="https://github.com/eduardomagaldi/got-guys" rel="noreferrer" target="_blank">repo</a>.</h3>
 		</div>
 	</>;
 }
